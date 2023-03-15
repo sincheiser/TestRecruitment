@@ -1,0 +1,5 @@
+storyboards:
+  inputs: TestRecruitment/Storyboards
+  outputs:
+    templateName: scenes-swift5
+    output: TestRecruitment/Storyboards/Storyboard.swift

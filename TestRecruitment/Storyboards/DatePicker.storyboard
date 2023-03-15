@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BRIDigitalText-Bold.ttf">
+            <string>BRIDigitalText-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Date PickerVC-->
+        <scene sceneID="U0l-8J-cgu">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerVC" id="fdB-JC-mdF" customClass="DatePickerVC" customModule="TestRecruitment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V1g-iV-ef7">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YP6-Md-cF1">
+                                <rect key="frame" x="35" y="231" width="320" height="382"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="naY-Gm-IWZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="320" id="6eJ-gk-Dtc"/>
+                                            <constraint firstAttribute="width" constant="320" id="t7C-lP-JBV"/>
+                                        </constraints>
+                                        <locale key="locale" localeIdentifier="id_ID"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewD-n5-Xfg">
+                                        <rect key="frame" x="8" y="328" width="304" height="46"/>
+                                        <color key="backgroundColor" red="0.062745098040000002" green="0.47058823529999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ewD-n5-Xfg" secondAttribute="height" multiplier="53:8" id="ztm-kp-6Sm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BRIDigitalText-Bold" family="BRI Digital Text" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Terapkan">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="BRIDigitalText-Bold" family="BRI Digital Text" pointSize="21"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="applyButtonDidTapped:" destination="fdB-JC-mdF" eventType="touchUpInside" id="iUr-nl-N6a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ewD-n5-Xfg" firstAttribute="leading" secondItem="YP6-Md-cF1" secondAttribute="leading" constant="8" id="6n8-Bz-Vou"/>
+                                    <constraint firstAttribute="trailing" secondItem="ewD-n5-Xfg" secondAttribute="trailing" constant="8" id="DXD-60-1HJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ewD-n5-Xfg" secondAttribute="bottom" constant="8" id="Hah-pm-pvy"/>
+                                    <constraint firstItem="ewD-n5-Xfg" firstAttribute="top" secondItem="naY-Gm-IWZ" secondAttribute="bottom" constant="8" id="PEN-B7-dke"/>
+                                    <constraint firstItem="naY-Gm-IWZ" firstAttribute="top" secondItem="YP6-Md-cF1" secondAttribute="top" id="SF3-fs-S16"/>
+                                    <constraint firstItem="naY-Gm-IWZ" firstAttribute="leading" secondItem="YP6-Md-cF1" secondAttribute="leading" id="pqd-xt-BWd"/>
+                                    <constraint firstAttribute="trailing" secondItem="naY-Gm-IWZ" secondAttribute="trailing" id="tdS-AU-Lv3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wpt-Vn-lZX"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YP6-Md-cF1" firstAttribute="centerY" secondItem="V1g-iV-ef7" secondAttribute="centerY" id="8tG-Mr-VVA"/>
+                            <constraint firstItem="YP6-Md-cF1" firstAttribute="centerX" secondItem="Wpt-Vn-lZX" secondAttribute="centerX" id="hpY-dn-rgI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="applyButton" destination="ewD-n5-Xfg" id="ulc-Ip-Me4"/>
+                        <outlet property="datePicker" destination="naY-Gm-IWZ" id="9Fv-ME-igb"/>
+                        <outlet property="wrapView" destination="YP6-Md-cF1" id="wib-wV-U2o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63X-uF-qvS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

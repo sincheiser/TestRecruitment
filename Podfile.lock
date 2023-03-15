@@ -1,0 +1,42 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.10)
+  - PryntTrimmerView (4.0.2)
+  - Realm (10.37.0):
+    - Realm/Headers (= 10.37.0)
+  - Realm/Headers (10.37.0)
+  - RealmSwift (10.37.0):
+    - Realm (= 10.37.0)
+  - SteviaLayout (4.7.3)
+  - Toaster (2.3.0)
+  - YPImagePicker (5.2.1):
+    - PryntTrimmerView (= 4.0.2)
+    - SteviaLayout (= 4.7.3)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - RealmSwift (~> 10)
+  - Toaster
+  - YPImagePicker
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - PryntTrimmerView
+    - Realm
+    - RealmSwift
+    - SteviaLayout
+    - Toaster
+    - YPImagePicker
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  Realm: 9c5fc6f8f5cb70b299f2e3064d2b9f6cb0f1523d
+  RealmSwift: 7be7bb45911c16400dd1bfce3a01764ecb4cae7a
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
+  YPImagePicker: f36043210c10b0783034eb1947d6e06e31c461e4
+
+PODFILE CHECKSUM: 8944c9a37976cffd641b43b82db6eca92907d1b8
+
+COCOAPODS: 1.11.3
